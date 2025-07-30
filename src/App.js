@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { initializeApp } from "firebase/app";
 import { getAuth, signInAnonymously, onAuthStateChanged } from "firebase/auth"; // Removed signInWithCustomToken as it's less common for initial setup
-import './App.css'
+import "./App.css";
 // Import the new components
-import ChatWindow from "./Gyan Components/ChatWindow";
-import ChatInput from "./Gyan Components/ChatInput";
+import ChatWindow from "../ChatWindow";
+import ChatInput from "./ChatInput";
 
 // Define your Firebase configuration using environment variables
 // These values will be available globally through process.env in a Create React App setup
