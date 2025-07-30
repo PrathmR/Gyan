@@ -1,0 +1,43 @@
+/* Import the Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Apply Inter font and full height to html and body */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Apply Inter font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden; /* Prevent overall body scroll if content fits */
+}
+
+/* Basic styling for the root div if needed, though Tailwind classes in App.js handle most of it */
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom scrollbar styles (as used in ChatWindow.js) */
+/* These are Tailwind classes, but if you needed more custom CSS for scrollbars,
+   you'd define them here for browser compatibility.
+   Example for Webkit browsers (Chrome, Safari):
+*/
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e2e8f0; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #60a5fa; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6; 
+}
+
